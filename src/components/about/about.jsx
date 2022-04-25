@@ -23,7 +23,7 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>3+ Years working </small>
+              <small>4+ Years working </small>
             </article>
 
             <article className='about__card'>
@@ -39,7 +39,12 @@ const About = () => {
             </article>
           </div>
 
-          <p>fsdkfjlskjf fkjsdlfsf jslkjfs</p>
+          <p>My name is Omri, 27 years old. <br />
+          Bachelor of Science in Computer Science. <br />
+          I studied at the College of Management with an FSD specialization. <br />
+          I have been working for a startup company for close to a year, <br />
+          and I'm looking for my next challenge in a development job at a stable company where I can advance and enrich my knowledge of additional languages and technologies. <br />
+          I would be happy for suggestions, you can contact one of the social networks at the bottom of the page or leave a comment at the bottom of the site.</p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
