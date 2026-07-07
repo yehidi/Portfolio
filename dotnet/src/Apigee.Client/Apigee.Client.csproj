@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <PackageId>Apigee.Client</PackageId>
+    <Title>Apigee.Client</Title>
+    <Description>
+      A resilient, dependency-injection-friendly HTTP client for microservices that
+      authenticate and communicate through an Apigee API gateway. Handles OAuth2
+      client-credentials token acquisition and caching, correlation-id propagation,
+      and retry/circuit-breaker resilience out of the box.
+    </Description>
+    <PackageTags>apigee;http;client;oauth2;microservices;resilience;gateway</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="8.10.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" Condition="Exists('README.md')" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Apigee.Client.Tests" />
+  </ItemGroup>
+
+</Project>
